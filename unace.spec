@@ -2,7 +2,7 @@ Summary:     unACE - extract, test and view ACE archives.
 Summary(pl): unACE - rozpakowuje, testuje i przegl±da archiwa ACE.
 Name:        unace
 Version:     1.2b
-Release:     1
+Release:     2
 Copyright:   Freeware
 Group:       Utilities/Archiving
 Group(pl):   Narzêdzia/Archiwizacja
@@ -34,17 +34,21 @@ make CFLAGS="$RPM_OPT_FLAGS -dLO_HI_BYTE_ORDER -DUNIX -DCASEINSENSE"
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT/usr/bin
 install -s unace $RPM_BUILD_ROOT/usr/bin
-bzip2 -9 readme.txt
+gzip -9fn readme.txt
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644, root, root, 755)
-%doc readme.txt.bz2
+%doc readme.txt.gz
 %attr(755,root,root) /usr/bin/unace
 
 %changelog
+* Fri Apr 23 1999 Maciej Le¶niewski <nimir@kis.p.lodz.pl>
+  [1.2b-2]
+- Gzipped docs
+
 * Thu Feb 25 1999 Maciej Le¶niewski <nimir@kis.p.lodz.pl>
   [1.2b-1]
 - Initial release as a PLD package.
