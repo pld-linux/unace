@@ -1,14 +1,13 @@
 Summary:	unACE - extract, test and view ACE archives
 Summary(pl):	unACE - rozpakowuje, testuje i przegl±da archiwa ACE
 Name:		unace
-Version:	2.2
-Release:	2
+Version:	1.2b
+Release:	4
+Epoch:		1
 License:	Freeware
 Group:		Applications/Archiving
-Source0:	http://hem.passagen.se/vanlid/winace/lin%{name}22.tgz
-# Source0-md5:	218020e64975775e191077a195732735
-URL:		http://www.winace.com/
-ExclusiveArch:	%{ix86}
+Source0:	%{name}pub.zip
+# Source0-md5:	1a73dda37e4d8d8ef70f27a858e32a55
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -23,7 +22,13 @@ przegl±dania zawarto¶ci archiwów stworzonych przez program ACE.
 
 %prep
 %setup -q -c -T
-tar zxf %{SOURCE0}
+unzip -qa %{SOURCE0}
+
+%build
+cp -f unix/makefile .
+cp -f unix/gccmaked .
+%{__make} CFLAGS="%{rpmcflags} -DUNIX -DCASEINSENSE" dep
+%{__make} CFLAGS="%{rpmcflags} -DUNIX -DCASEINSENSE"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -36,5 +41,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc file_id.diz
+%doc readme.txt file_id.diz
 %attr(755,root,root) %{_bindir}/unace
