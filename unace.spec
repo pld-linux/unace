@@ -35,12 +35,10 @@ install -d $RPM_BUILD_ROOT%{_bindir}
 
 install unace $RPM_BUILD_ROOT%{_bindir}
 
-gzip -9fn readme.txt
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc readme.txt.gz
+%doc readme.txt
 %attr(755,root,root) %{_bindir}/unace
