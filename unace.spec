@@ -1,13 +1,13 @@
-Summary:     unACE - extract, test and view ACE archives.
-Summary(pl): unACE - rozpakowuje, testuje i przegl±da archiwa ACE.
-Name:        unace
-Version:     1.2b
-Release:     2
-Copyright:   Freeware
-Group:       Utilities/Archiving
-Group(pl):   Narzêdzia/Archiwizacja
-Source:	     http://members.aol.com/mlemke6413/%{name}pub.zip
-URL:         http://members.aol.com/mlemke6413/ace.html
+Summary:	unACE - extract, test and view ACE archives.
+Summary(pl):	unACE - rozpakowuje, testuje i przegl±da archiwa ACE.
+Name:		unace
+Version:	1.2b
+Release:	2
+Copyright:	Freeware
+Group:		Utilities/Archiving
+Group(pl):	Narzêdzia/Archiwizacja
+Source:		http://members.aol.com/mlemke6413/%{name}pub.zip
+URL:		http://members.aol.com/mlemke6413/ace.html
 BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
