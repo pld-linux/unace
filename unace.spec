@@ -7,7 +7,7 @@ License:	Freeware
 Group:		Applications/Archiving
 Source0:	http://hem.passagen.se/vanlid/winace/lin%{name}22.tgz
 # Source0-md5:	218020e64975775e191077a195732735
-URL:		http://www.winace.com
+URL:		http://www.winace.com/
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
