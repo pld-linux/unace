@@ -5,8 +5,6 @@ Version:	1.2b
 Release:	3
 License:	freeware
 Group:		Applications/Archiving
-Group(de):	Applikationen/Archivierung
-Group(pl):	Aplikacje/Archiwizacja
 Source0:	http://members.aol.com/mlemke6413/%{name}pub.zip
 URL:		http://members.aol.com/mlemke6413/ace.html
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
