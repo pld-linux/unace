@@ -2,7 +2,7 @@ Summary:	unACE - extract, test and view ACE archives
 Summary(pl):	unACE - rozpakowuje, testuje i przegl±da archiwa ACE
 Name:		unace
 Version:	2.2
-Release:	1
+Release:	2
 License:	Freeware
 Group:		Applications/Archiving
 Source0:	http://hem.passagen.se/vanlid/winace/lin%{name}22.tgz
