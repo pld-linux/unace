@@ -43,12 +43,3 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc readme.txt.gz
 %attr(755,root,root) %{_bindir}/unace
-
-%changelog
-* Fri Apr 23 1999 Maciej Le¶niewski <nimir@kis.p.lodz.pl>
-  [1.2b-2]
-- Gzipped docs
-
-* Thu Feb 25 1999 Maciej Le¶niewski <nimir@kis.p.lodz.pl>
-  [1.2b-1]
-- Initial release as a PLD package.
