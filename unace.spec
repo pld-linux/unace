@@ -27,8 +27,8 @@ unzip -qa %{SOURCE0}
 %build
 cp unix/makefile .
 cp unix/gccmaked .
-make CFLAGS="$RPM_OPT_FLAGS -DUNIX -DCASEINSENSE" dep
-make CFLAGS="$RPM_OPT_FLAGS -DUNIX -DCASEINSENSE"
+%{__make} CFLAGS="$RPM_OPT_FLAGS -DUNIX -DCASEINSENSE" dep
+%{__make} CFLAGS="$RPM_OPT_FLAGS -DUNIX -DCASEINSENSE"
 
 %install
 rm -rf $RPM_BUILD_ROOT
