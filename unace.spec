@@ -40,7 +40,7 @@ gzip -9fn readme.txt
 rm -rf $RPM_BUILD_ROOT
 
 %files
-%defattr(644, root, root, 755)
+%defattr(644,root,root,755)
 %doc readme.txt.gz
 %attr(755,root,root) %{_bindir}/unace
 
