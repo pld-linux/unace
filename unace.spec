@@ -8,6 +8,7 @@ Group:		Applications/Archiving
 Source0:	http://hem.passagen.se/vanlid/winace/lin%{name}22.tgz
 # Source0-md5:	218020e64975775e191077a195732735
 URL:		http://www.winace.com/
+ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
