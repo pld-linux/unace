@@ -2,8 +2,8 @@ Summary:	unACE - extract, test and view ACE archives
 Summary(pl):	unACE - rozpakowuje, testuje i przegl±da archiwa ACE
 Name:		unace
 Version:	1.2b
-Release:	2
-Copyright:	Freeware
+Release:	3
+License:	freeware
 Group:		Applications/Archiving
 Group(de):	Applikationen/Archivierung
 Group(pl):	Aplikacje/Archiwizacja
@@ -34,7 +34,9 @@ cp -f unix/gccmaked .
 %install
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT%{_bindir}
+
 install unace $RPM_BUILD_ROOT%{_bindir}
+
 gzip -9fn readme.txt
 
 %clean
