@@ -3,7 +3,7 @@ Summary(pl):	unACE - rozpakowuje, testuje i przegl±da archiwa ACE
 Name:		unace
 Version:	1.2b
 Release:	3
-License:	freeware
+License:	Freeware
 Group:		Applications/Archiving
 Source0:	http://members.aol.com/mlemke6413/%{name}pub.zip
 URL:		http://members.aol.com/mlemke6413/ace.html
