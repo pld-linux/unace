@@ -8,7 +8,7 @@ Group:       Utilities/Archiving
 Group(pl):   Narzêdzia/Archiwizacja
 Source:	     http://members.aol.com/mlemke6413/%{name}pub.zip
 URL:         http://members.aol.com/mlemke6413/ace.html
-BuildRoot:   /tmp/%{name}-%{version}-root
+BuildRoot:	/tmp/%{name}-%{version}-root
 
 %description
 The unACE utility is a freeware program, distributed with source code and
