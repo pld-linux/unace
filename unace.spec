@@ -8,6 +8,7 @@ License:	Freeware
 Group:		Applications/Archiving
 Source0:	%{name}pub.zip
 # Source0-md5:	1a73dda37e4d8d8ef70f27a858e32a55
+BuildRequires:	unzip
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
