@@ -2,14 +2,13 @@ Summary:	unACE - extract, test and view ACE archives
 Summary(pl):	unACE - rozpakowuje, testuje i przegl±da archiwa ACE
 Name:		unace
 Version:	1.2b
-Release:	5
+Release:	4
 Epoch:		1
 License:	Freeware
 Group:		Applications/Archiving
 Source0:	%{name}pub.zip
 # Source0-md5:	1a73dda37e4d8d8ef70f27a858e32a55
 BuildRequires:	unzip
-Obsoletes:	linunace
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
