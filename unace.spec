@@ -28,8 +28,12 @@ unzip -qa %{SOURCE0}
 %build
 cp -f unix/makefile .
 cp -f unix/gccmaked .
-%{__make} CFLAGS="%{rpmcflags} -DUNIX -DCASEINSENSE" dep
-%{__make} CFLAGS="%{rpmcflags} -DUNIX -DCASEINSENSE"
+%{__make} dep \
+	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags} -DUNIX -DCASEINSENSE" 
+%{__make} \
+	CC="%{__cc}" \
+	CFLAGS="%{rpmcflags} -DUNIX -DCASEINSENSE"
 
 %install
 rm -rf $RPM_BUILD_ROOT
