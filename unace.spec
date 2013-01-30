@@ -8,6 +8,7 @@ License:	Freeware
 Group:		Applications/Archiving
 Source0:	%{name}pub.zip
 # Source0-md5:	1a73dda37e4d8d8ef70f27a858e32a55
+Patch0:		%{name}-format-security.patch
 BuildRequires:	unzip
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -24,6 +25,7 @@ przeglądania zawartości archiwów stworzonych przez program ACE.
 %prep
 %setup -q -c -T
 unzip -qa %{SOURCE0}
+%patch0 -p1
 
 %build
 cp -f unix/makefile .

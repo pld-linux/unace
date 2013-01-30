@@ -1,0 +1,21 @@
+diff -urN unace/unace.c unace.new/unace.c
+--- unace/unace.c	1998-07-01 10:29:10.000000000 +0200
++++ unace.new/unace.c	2013-01-30 15:07:54.736449237 +0100
+@@ -262,7 +262,7 @@
+       printf("Authenticity Verification:");   // print the AV
+       sprintf(av_str, "\ncreated on %d.%d.%d by ",
+               ts_day(adat.time_cr), ts_month(adat.time_cr), ts_year(adat.time_cr));
+-      printf(av_str);
++      fputs(av_str, stdout);
+       strncpy(av_str, mhead.AV, mhead.AV_SIZE);
+       av_str[mhead.AV_SIZE] = 0;
+       printf("%s\n\n", av_str);
+@@ -560,7 +560,7 @@
+    INT show_help,
+        arg_cnt = 1;
+ 
+-   printf(version);
++   fputs(version, stdout);
+    show_help=0;
+ 
+    if (argc < 3 || strlen(argv[1]) > 1 || argv[argc-1][0] == '-')
