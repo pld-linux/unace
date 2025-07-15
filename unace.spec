@@ -25,7 +25,7 @@ przeglądania zawartości archiwów stworzonych przez program ACE.
 %prep
 %setup -q -c -T
 unzip -qa %{SOURCE0}
-%patch0 -p1
+%patch -P0 -p1
 
 %build
 cp -f unix/makefile .
